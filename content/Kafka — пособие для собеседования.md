@@ -400,7 +400,7 @@ A ──publish──▶ [ Topic: orders ] ──▶ B (consumer group "billing"
 
 ## 3.6. Пирамида хранения vs логические абстракции
 
-![[Pasted image 20260714235601.png|797]]
+![|797](https://raw.githubusercontent.com/goalbeam-hash/notes/main/assets/kafka-diagram-1.png)
 Все сущности Kafka удобно разложить на **две оси**: что физически **хранит данные** и с какими **логическими абстракциями работают клиенты** (продюсеры/консюмеры). Их часто путают — топик кажется «уровнем хранения», а это логика.
 
 ### Ось 1 — физическое хранение (вложенность = «содержит»)
@@ -2637,7 +2637,7 @@ expect(trace.map((m) => m.value.eventType)).toEqual([
 
 # Глава 18. Юниты Kafka и масштабирование: брокер, топик, партиция, реплика, группа — зачем и как связаны
 
-![[kafka_units_scaling_map 1.png]]
+![](https://raw.githubusercontent.com/goalbeam-hash/notes/main/assets/kafka-units-scaling-map.png)
 
 
 
